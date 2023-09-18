@@ -1,11 +1,28 @@
-let name = prompt("What is your name?");
-console.log("User's name is: " + name);
-let food = prompt("What is your favourite food?");
-console.log("User's favourite food is: " + food);
-let transport = prompt("What is your favourite method of transport?");
-console.log("User's preferred method of transport is: " + transport);
-let animal = prompt("What is your favourite animal?");
-console.log("User's favourite animal is: " + animal);
+let name = "";
+let food = "";
+let transport = "";
+let animal = "";
+
+function getUserInfo() {
+  while (!name) {
+    name = prompt("What is your name?");
+  }
+  console.log("User's name is: " + name);
+  while (!food) {
+    food = prompt("What is your favourite food?");
+  }
+  console.log("User's favourite food is: " + food);
+  while (!transport) {
+    transport = prompt("What is your favourite method of transport?");
+  }
+  console.log("User's preferred method of transport is: " + transport);
+  while (!animal) {
+    animal = prompt("What is your favourite animal?");
+  }
+  console.log("User's favourite animal is: " + animal);
+}
+
+getUserInfo();
 
 alert(
   "Welcome, " +
